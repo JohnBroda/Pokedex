@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="Templates/innerHTML.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="img\icon.png">
+</head>
+
+<body onload="loadPokemon()">
+    <div id="load" class="load" style="display: none;">
+        <img class="loader" src="img\icon.png">
+        <h1>Loading...</h1>
+    </div>
+    <header>
+        <input type="text" placeholder="Search..." id="searchPokemon" onchange="searchPokemon()">
+    </header>
+    <img src="img/Pokedex.png" class="pokedex">
+    <div class="pokeCardWidth">
+        <div id="pokeCard">
+        </div>
+    </div>
+    <div class="loadPokemonflex" id="pokeCount">
+    </div>
+    <div id="pokeZoom" class="d-none">
+    </div>
+
+</body>
+
+</html>

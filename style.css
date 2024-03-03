@@ -1,0 +1,409 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(./fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    margin: 0px;
+    font-family: OpenSans;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.d-none {
+    display: none;
+}
+
+.load{
+    position: fixed;
+    background-color: white;
+    background: linear-gradient(0deg, rgba(196, 195, 195, 0.945) 49%, rgba(0, 0, 0, 0.973) 49%, rgba(0, 0, 0, 0.979) 51%, rgba(131, 26, 26, 0.952) 51%);
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.load h1{
+    filter: drop-shadow(0px 0px 4px black);
+    margin-top: 0px;
+    font-size: 64px;
+}
+
+.load img{
+    filter: drop-shadow(0px 0px 4px black);
+    height: 512px;
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.pokedex {
+    position: absolute;
+    top: 15px;
+    left: 5%;
+    height: 64px;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.527));
+    opacity: 0.9;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(31, 25, 63, 0.897);
+    left: 0px;
+    right: 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 4px black;
+}
+
+header input {
+    color: white;
+    background-color: rgba(18, 12, 51, 0.897);
+    border-width: 0px;
+    padding: 10px;
+    width: 25%;
+    border-radius: 30px;
+    box-shadow: 1px 2px 2px black;
+    outline: none;
+}
+
+.card {
+    background-color: rgba(242, 242, 242, 0.9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 4px black;
+    text-align: center;
+}
+
+.card:hover {
+    transition: 0.1s;
+    background-color: rgba(187, 187, 187, 0.9);
+    cursor: pointer;
+}
+
+
+.type {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.type b {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    background-color: rgba(105, 50, 50, 0.925);
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.pokeCardWidth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#pokeCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 40px;
+    max-width: 1920px;
+    margin-top: 150px;
+}
+
+.loadPokemonflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.loadPokemonStyle {
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px black);
+}
+
+.loadPokemonStyle h1 {
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgba(255, 71, 71, 0.445);
+    border-radius: 16px 0px 0px 16px;
+}
+
+.loadPokemonStyle h2 {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.644);
+
+}
+
+.loadPokemonStyle h3 {
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 15px;
+    background-color: rgba(255, 71, 71, 0.445);
+    border-radius: 0px 16px 16px 0px;
+}
+
+.loadPokemonflex h1:hover {
+    transition: 0.1s;
+    background-color: rgba(253, 117, 93, 0.445);
+    cursor: pointer;
+}
+
+.loadPokemonflex h3:hover {
+    transition: 0.1s;
+    background-color: rgba(253, 117, 93, 0.445);
+    cursor: pointer;
+}
+
+.pokeZoom {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cardZoomFlex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zoomBackground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.cardZoomFlex h1 {
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    z-index: 980;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.cardZoomFlex h1:hover {
+    filter: drop-shadow(0px 0px 10px red);
+    cursor: pointer;
+}
+
+.cardZoom {
+    background-color: rgb(199, 199, 199);
+    background: linear-gradient(0deg, rgb(196, 195, 195) 55%, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 1) 56%, rgb(131, 26, 26) 56%);
+    width: 800px;
+    height: 800px;
+    border-radius: 48%;
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.329));
+    border: 8px solid;
+    z-index: 980;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardZoomDescription {
+    color: white;
+    display: flex;
+    margin-top: 5%;
+    margin-left: -100px;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.cardZoomDescription h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.cardZoomDescription h3 {
+    font-size: 16px;
+}
+
+.cardZoomDescription img {
+    image-rendering: pixelated;
+    height: 256px;
+    filter: drop-shadow(0px 0px 16px rgb(189, 188, 188));
+}
+
+.myChart {
+    height: 440px;
+    width: 440px;
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .cardZoomDescription h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+
+    }
+
+    .cardZoomDescription h3 {
+        font-size: 16px;
+        margin: 0px;
+        margin-bottom: 12px;
+
+    }
+
+    .cardZoom {
+
+        width: 550px;
+        height: 550px;
+
+    }
+
+    .myChart {
+        height: 270px;
+        width: 270px;
+    }
+
+    header input {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 830px) {
+    .cardZoomFlex {
+        flex-direction: column;
+    }
+
+    .cardZoomFlex h1 {
+        rotate: 90deg;
+    }
+
+    .pokedex {
+        margin-top: 15px;
+        height: 32px;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+    .load h1{
+        filter: drop-shadow(0px 0px 4px black);
+        margin-top: 0px;
+        font-size: 48px;
+    }
+    
+    .load img{
+        filter: drop-shadow(0px 0px 4px black);
+        height: 256px;
+    }
+
+    header input {
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    .pokedex {
+        margin-top: 20px;
+        height: 24px;
+    }
+
+    .card {
+        background-color: rgba(242, 242, 242, 0.9);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 4px black;
+        text-align: center;
+    }
+
+    .cardZoom {
+        width: 280px;
+        height: 350px;
+        border-radius: 80px;
+        background: linear-gradient(0deg, rgb(196, 195, 195) 63%, rgba(0, 0, 0, 1) 63%, rgba(0, 0, 0, 1) 65%, rgb(131, 26, 26) 65%);
+    }
+
+    .myChart {
+        height: 220px;
+        width: 220px;
+    }
+
+    .cardZoomDescription h2 {
+        margin-top: 8px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .cardZoomDescription h3 {
+        font-size: 12px;
+        margin: 0px;
+        margin-bottom: 4px;
+    }
+
+    .type b {
+        font-size: 12px;
+    }
+
+    .cardZoomDescription img {
+        margin-left: 60px;
+        margin-top: 10px;
+        height: 96px;
+    }
+
+    .loadPokemonStyle h2 {
+        font-size: 16px;
+
+    }
+
+    .loadPokemonStyle h1 {
+        font-size: 16px;
+
+    }
+
+    .loadPokemonStyle h3 {
+        font-size: 16px;
+
+    }
+}
